@@ -15,11 +15,11 @@ const allPhone = phone =>{
     phone.forEach(phone => {
         const card = document.getElementById("card-list");
         const div = document.createElement("div");
-        
+        div.className = "col-md-3 col-sm-12 m-1";
 
         div.innerHTML = `
-        <div>
-            <div class="card " style="width: 18rem;">
+        <div >
+            <div class="card" style="width: 18rem;">
                 <img src="${phone.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Brand: ${phone.brand}</h5>
